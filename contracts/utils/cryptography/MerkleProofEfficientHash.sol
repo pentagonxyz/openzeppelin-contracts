@@ -18,7 +18,7 @@ pragma solidity ^0.8.0;
  * against this attack out of the box.
  */
 library MerkleProofEfficientHash {
-    function _efficientHash(bytes32 a, bytes32 b) private pure returns (bytes32 value) {
+    function _efficientHash(bytes32 a, bytes32 b) internal pure returns (bytes32 value) {
         /// @solidity memory-safe-assembly
         assembly {
             mstore(0x00, a)
